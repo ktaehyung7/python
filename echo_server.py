@@ -27,8 +27,8 @@ while True:
     if not data:
         break
     
-    print('Receive from', addr, data.decode())
-    client_socket.sendall(data)
-    
+    print('[ECO_CLIENT]: ', addr, data.decode())
+    #client_socket.sendall(data)
+    client_socket.sendall('good to see you!'.encode())
 client_socket.close()
 server_socket.close()
