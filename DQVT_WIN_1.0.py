@@ -15,7 +15,7 @@ class WindowClass(QMainWindow, form_class) :
         super().__init__()
         self.setupUi(self)
         self.progressBar.setValue(0)
-        self.webEngineView.load(QUrl("http://www.isac1.co.kr"))
+        self.webEngineView.load(QUrl("https://github.com/ktaehyung7"))
 
     def button_clicked(self):
         self.progressBar.setValue(0)
